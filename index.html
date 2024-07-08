@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>intro</title>
+    <style>
+      body {
+        margin: 0;
+        width: 100vh;
+        height: 100vh;
+        overflow-x: hidden;
+        background-color: black;
+      }
+      .full {
+        position: absolute;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        font-size: 4rem;
+        background-color: black;
+        color: aliceblue;
+      }
+      .little{
+        font-size: 2rem;
+      }
+
+      .monanima,
+      .monanima2,
+      .monanima3,
+      .monanima4,
+      .monanima5 {
+        opacity: 0;
+        text-align: center;
+        transition: opacity 2s ease-in;
+      }
+      .monanima.active,
+      .monanima2.active,
+      .monanima3.active,
+      .monanima4.active,
+      .monanima5.active {
+        opacity: 1;
+        animation: fadeInUp 2s;
+      }
+      .text02,
+      .monanima2,
+      .text03,
+      .monanima3,
+      .text04,
+      .monanima4,
+      .text05,
+      .monanima5 {
+        visibility: hidden;
+      }
+      @media only screen and (max-width: 768px) {
+        body {
+          width: 100vw;
+          height: 100vh;
+        }
+        .full {
+          font-size: 1.8rem;
+        }
+        .little{
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text01 full">
+      <div class="monanima">Hello</div>
+    </div>
+
+    <div class="text02 full">
+      <div class="monanima2">Welcome to my web site</div>
+    </div>
+
+    <div class="text03 full">
+      <div class="monanima3">
+        I don't know what to say <br /><br /><br />
+        Thank you
+      </div>
+    </div>
+
+    <div class="text04 full">
+      <div class="monanima4">
+        <p>:)</p>
+      </div>
+    </div>
+
+    <div class="text05 full">
+      <div class="monanima5">
+        kifah hadi trouh bla YDK fih?<br /><br /><br />
+        <div class="little">send (ydk fih ida sa7 t7t fiha )</div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
